@@ -1,0 +1,535 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* outline: 1px dashed blue; */
+  }
+  body {
+  /*  background-color: rgb(245,243,195); */
+    background-color: gainsboro;
+    margin: 0;
+    margin-top: 40px;
+    width: 100%;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+}
+  a:hover {
+    color: rgb(158,3,1);
+  }
+  body > p {
+    margin-left: auto;
+  }
+  #logo-small {
+    display: none;
+    position: fixed;
+    width: 110px;
+    height: auto;
+    top: 0;
+    margin-left: 10px;
+  }
+  
+  #header {
+    width: 1080px;
+    position: relative;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+  #header > img {
+    width: 410px;
+    height: auto;
+  }
+  #head-data {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    width: 60%;
+    -webkit-box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+    -moz-box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+    box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+  
+  }
+  #head-nav > ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(132,10,0);
+  }
+  #head-nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(158,3,1);
+    border: 2px solid rgb(132,10,0);
+    height: 30px;
+    width: 100px;
+    line-height: 25px;
+    float: left;
+    cursor: pointer;
+  }
+  #head-nav > ul > li:last-child {
+    /* padding-top: 1px; */
+    width: 360px;
+    float: right;
+  }
+  #head-nav > ul > li:hover {
+    background-color: rgb(132,10,0);
+  }
+  #head-nav > ul > li > a {
+    text-decoration: none;
+  }
+  #head-nav > ul > li > a > p {
+    margin:0px;
+    color: white;
+    text-align: center;
+  }
+  #head-nav > ul > li form {
+    /* vertical-align: middle; */
+    display: inline;
+    /* margin-top: 10px; */
+    width: 355px;
+  }
+  #head-nav > ul > li  input {
+    display: inline;
+    height: 25px;
+    
+    width: 250px;
+  }
+  #head-nav > ul > li  input:last-of-type {
+    width: 100px;
+  }
+  
+  
+  #main {
+    position: relative;
+    width: 1080px;
+    /* min-height: 80vh; */
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border: 3px solid rgb(132,10,0);
+    border-top: 0px;
+    padding: 0;
+    -webkit-box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+    -moz-box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+    box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+  }
+  .sticky {
+    position: fixed;
+    top: 0px;
+    width: 1080px;
+    margin-left: -3px;
+    -webkit-box-shadow: 0px 7px 35px -5px rgba(51,4,4,0.71);
+    -moz-box-shadow: 0px 7px 35px -5px rgba(51,4,4,0.71);
+    box-shadow: 0px 7px 35px -5px rgba(51,4,4,0.71);
+  }
+  #nav-bar {
+  
+  }
+  #nav-bar > ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(132,10,0);
+  
+  }
+  #nav-bar > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(158,3,1);
+    border: 3px solid rgb(132,10,0);
+    height: 50px;
+    width: 12.5%;
+    padding-top: 10;
+    float: left;
+    cursor: pointer;
+  }
+  #nav-bar > ul > li:hover {
+    background-color: rgb(132,10,0);
+  }
+  #nav-bar > ul > li > a {
+    text-decoration: none;
+  }
+  #nav-bar > ul > li > a > p {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+  #nav-bar #podkategorije {
+    background-color: gainsboro;
+    background: linear-gradient(white, gainsboro);
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid rgb(158,3,1);
+  }
+  #nav-bar #podkategorije li {
+    background-color: inherit;
+    border: 0px;
+    text-align: center;
+    width: 16.6%;
+  }
+  #nav-bar #podkategorije a {
+    color: black;
+  }
+  #nav-bar #podkategorije a:hover {
+    color: rgb(158,3,1);
+  }
+  #news {
+    min-height: 80vh;
+  }
+  #news > div {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* float: left; */
+  }
+  #left {
+    width: 24%;
+    border-right: 2px solid black;
+
+  }
+  #left a {
+      color: black;
+      text-decoration: none;
+  }
+  #left a:hover {
+    color: rgb(158,3,1);
+  }
+  .left-news {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    border-bottom: 1px dashed black;
+  }
+  .left-news > img {
+    width: 100%;
+    height: 150px;
+  }
+  .left-news > h3 {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #center {
+    width: 50%;
+  }
+  #center > h3 {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .center-news {
+    width: 95%;
+    min-height: 130px; 
+    margin: auto;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+  }
+  .center-news  img {
+    width: 200px;
+    float: right;
+    margin: 0px 0px 10px 20px;
+    /* height: 300px; */
+  }
+  .center-news > p {
+    text-align: justify;
+  }
+  #right {
+    width: 24%;
+    
+  }
+  #right > h3 {
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  #right img {
+    width: 100%;
+  }
+  .right-news {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .right-news > img {
+    width: 100%;
+    height: 150px;
+  }
+  .right-news > h3 {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #footer {
+    clear: both;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    height: 300px;
+    background-color: rgb(132,10,0);
+  }
+  #footer ul {
+    margin-top: 20px;
+    width: 150px;
+  }
+  #footer li {
+    padding: 2px;
+  }
+  #footer a {
+    color: wheat;
+  }
+  #dunno {
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    height: 250px;
+    background-color: rgb(158,3,1);
+    padding: 5px;
+  }
+  #dunno > * {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #dunno > img {
+    width: 200px;
+    float: right;
+    margin:10px;
+  }
+  #dunno table {
+    width: 100%;
+    text-align: justify;
+   
+  }
+
+  #dunno table th:last-child,
+  #dunno table td:last-child {
+    text-align: right;
+  }
+  #verzijaSajta {
+    padding: 10px;
+    text-align: center;
+    color: wheat;
+    margin-left: 40px;
+  }
+  #master-footer {
+    width: 1080px;
+    margin: auto;
+    height: 85px;
+    margin-top: -15px;
+  }
+  #master-footer > p {
+    padding-top: 10px;
+  }
+  
+
+  
+ #news {
+    margin-top: 20px;
+  }
+
+  #news-list {
+    width: 75%;
+  }
+  .new {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 10px;
+  }
+  .new > h2 {
+    /* display: inline-block; */
+    width: 85%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .new > img, .new > a > img {
+    margin-left: 10px;
+    width: 250px;
+    height: 150px;
+  }
+  .new > div {
+    width: 64.5%;
+    height: 150px;
+    float: right;
+    vertical-align: top;
+  }
+  .new > div > p {
+    padding-right: 10px;
+    text-align: justify;
+    margin-top: 5px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+  }
+  .new > p {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .greska {
+      width: 400px;
+      margin-left: 50px;
+      padding: 30px;
+      text-align: center;
+      border: 2px solid rgb(158,3,1);
+  }
+
+
+  #logo-small {
+    display: none;
+    position: fixed;
+    width: 110px;
+    height: auto;
+    top: 0;
+    margin-left: 10px;
+  }
+  #c-header {
+    width: 1080px;
+    position: relative;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+  #c-logo {
+    width: 28%;
+    height: auto;
+  }
+  #c-head-data {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    width: 70%;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+    -moz-box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+    box-shadow: 0px 2px 32px 1px rgba(51,4,4,0.71);
+  }
+  
+  
+  #c-head-nav > ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(132,10,0);
+  }
+  #c-head-nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(158,3,1);
+    border: 2px solid rgb(132,10,0);
+    height: 30px;
+    line-height: 25px;
+    width: 100px;
+    padding-top: 10;
+    float: left;
+    cursor: pointer;
+  }
+  #c-head-nav > ul > li:last-child {
+    /* padding-top: 1px; */
+    width: 360px;
+    float: right;
+  }
+  #c-head-nav > ul > li:hover {
+    background-color: rgb(132,10,0);
+  }
+  #c-head-nav > ul > li > a {
+    text-decoration: none;
+  }
+  #c-head-nav > ul > li > a > p {
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+  }
+  #c-head-nav > ul > li form {
+    /* vertical-align: middle; */
+    display: inline;
+    /* margin-top: 10px; */
+    width: 355px;
+  }
+  #c-head-nav > ul > li  input {
+    display: inline;
+    height: 25px;
+    width: 250px;
+  }
+  #c-head-nav > ul > li  input:last-of-type {
+    width: 100px;
+  }
+  
+  #pinned {
+    position: relative;
+  }
+  .pin-post {
+    width: 33.333333333%;
+    float: left;
+    height: 250px;
+    display: inline-block;
+  }
+  .pin-post:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .pin-post > img {
+    width: 220px;
+    height: 132px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .pin-post h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+  }
+  /* .pin-post > a */
+
+  #news #komentari {
+  
+      width: 70%;
+      padding: 25px;
+      padding-top: 0px;
+      /* width: 400px; */
+      border-top: 1px solid darkred;
+  }
+  #news #komentari textarea {
+    width: 100%;
+  }
+  #news #komentari input[type='submit'] {
+    width: 100px;
+    height: 25px;
+  }
+  #lista-komentara div {
+    background-color: gainsboro;
+    width: 90%;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    /* padding-left: 100px; */
+  }
+  #lista-komentara div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 10px;
+    float: left;
+
+  }
+  #news > .post {
+    padding: 25px;
+    width: 70%;
+    border-right: 1px solid gainsboro;
+  }
+  #news > .post h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1px;
+  }
+
+  
